@@ -422,8 +422,7 @@ class DatabaseHelper {
 
     //Table Paciente
     await db.rawDelete("DELETE FROM pacientes");
-    await db.rawInsert(
-        'INSERT INTO pacientes(nome, diagnostico) VALUES("ALEX SANDRO FRANCISCO DE CAMARGO","Tetraplegia - Lesão Medular C5 por Acidente automobilístio em 15-OUT-2014")');
+    await db.rawInsert('INSERT INTO pacientes(nome, diagnostico) VALUES("")');
 
     //Table agenda_medicamento
     await db.rawDelete("DELETE FROM agenda_medicamento");
